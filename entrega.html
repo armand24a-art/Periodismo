@@ -98,123 +98,88 @@
     </div>
   </section>
 
-  <!-- FORMULARIO DE ENTREGA -->
+  <!-- FORMULARIO DE ENTREGA (GOOGLE FORMS) -->
   <section class="section" style="background: linear-gradient(180deg, #f0f7f2 0%, var(--bg) 100%);">
     <div class="container">
       <h2 class="section-title fade-in">Formulario de Entrega</h2>
-      <p class="section-subtitle fade-in">Completa tus datos y sube los archivos de tu practica final</p>
+      <p class="section-subtitle fade-in">Completa el formulario de Google para enviar tu practica final con todos los archivos</p>
 
-      <div class="form-section fade-in">
-        <div id="submitMsg" style="display:none;" class="info-box info-box-success">
-          <span class="box-icon">&#127881;</span>
-          <div>
-            <p><strong>Tu trabajo ha sido enviado exitosamente!</strong><br>
-            Los instructores revisaran tu entrega y te contactaran con retroalimentacion. Recuerda asistir a la sesion plenaria del 15 de julio para presentar tu mapa.</p>
+      <!-- INSTRUCCIONES -->
+      <div class="info-box info-box-info fade-in" style="max-width:800px;margin:0 auto 32px;">
+        <span class="box-icon">&#128161;</span>
+        <div>
+          <p><strong>Como funciona la entrega:</strong> El formulario de abajo es un Google Form. Puedes completarlo directamente aqui o abrirlo en una nueva pestana. Los archivos se guardan automaticamente en Google Drive y recibiras un correo de confirmacion en <strong>armand24a@gmail.com</strong>.</p>
+        </div>
+      </div>
+
+      <!-- GOOGLE FORM EMBED -->
+      <div class="form-section fade-in" style="max-width:850px;margin:0 auto;padding:0;overflow:hidden;border:2px solid var(--border);">
+        <div style="background:var(--primary);color:white;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="font-size:1.3rem;">&#128221;</span>
+            <span style="font-weight:600;font-size:0.95rem;">Formulario de Entrega - Google Forms</span>
           </div>
+          <a id="googleFormLink" href="#" target="_blank" class="btn btn-sm" style="background:rgba(255,255,255,0.15);color:white;border:1px solid rgba(255,255,255,0.3);">
+            &#8599; Abrir en nueva pestana
+          </a>
         </div>
 
-        <form id="submissionForm">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-            <div class="form-group">
-              <label for="nombre">Nombre completo <span class="required">*</span></label>
-              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre completo" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo electronico <span class="required">*</span></label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="tu@correo.com" required>
-            </div>
-          </div>
+        <!--
+          ====================================================================
+          CONFIGURACION: Reemplaza la URL de abajo con la de tu Google Form.
+          La URL debe tener esta forma:
+          https://docs.google.com/forms/d/e/TU_ID/formResponse?embedded=true
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-            <div class="form-group">
-              <label for="medio">Medio de comunicacion</label>
-              <input type="text" id="medio" name="medio" class="form-control" placeholder="Ej: El Universal, radio XYZ, freelance">
-            </div>
-            <div class="form-group">
-              <label for="rol">Rol / Puesto</label>
-              <input type="text" id="rol" name="rol" class="form-control" placeholder="Ej: Reportero, editor, corresponsal">
-            </div>
-          </div>
+          Para obtener la URL:
+          1. Crea tu Google Form
+          2. Haz clic en "Enviar" (boton azul)
+          3. Selecciona el icono de "Insertar" (< >)
+          4. Copia la URL que aparece
+          ====================================================================
+        -->
+        <div id="formPlaceholder" style="padding:60px 20px;text-align:center;color:var(--text-light);">
+          <div style="font-size:3rem;margin-bottom:16px;opacity:0.4;">&#128221;</div>
+          <h3 style="color:var(--primary-dark);margin-bottom:8px;">Formulario no configurado</h3>
+          <p style="max-width:400px;margin:0 auto 20px;font-size:0.9rem;">
+            El formulario de Google Forms belum dikonfigurasi. Sigue las instrucciones en <code>SETUP_GOOGLE_FORM.md</code> para crear el formulario y reemplaza la URL en este archivo.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScLtItlsWiLVSzm5wt5UfudnvJnKq2bBh0j16cvgelLbszIFA/viewform?usp=publish-editor" class="btn btn-secondary btn-sm">Ver instrucciones de configuracion</a>
+        </div>
 
-          <div class="form-group">
-            <label for="enlace-mapa">Enlace al mapa interactivo (opcional)</label>
-            <input type="url" id="enlace-mapa" name="enlace-mapa" class="form-control" placeholder="https://felt.com/map/... o https://datawrapper.de/...">
-          </div>
+        <!-- Google Form iframe - descomentarea cuando tengas la URL -->
+        <!--
+        <iframe
+          id="googleFormIframe"
+          src="https://docs.google.com/forms/d/e/TU_ID_FORMULARIO_GOOGLE/viewform?embedded=true"
+          width="100%"
+          height="800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="display:none;border:none;"
+        >
+          Cargando formulario...
+        </iframe>
+        -->
+      </div>
 
-          <!-- UPLOAD: MAPA -->
-          <div class="form-group">
-            <label>Mapa de afectacion preliminar <span class="required">*</span></label>
-            <div class="file-upload" id="uploadMapa">
-              <div class="upload-icon">&#128205;</div>
-              <p><strong>Arrastra tu archivo aqui</strong> o haz clic para seleccionar</p>
-              <p class="file-types">Formatos aceptados: .qgz, .png, .pdf, .jpg (max 50 MB)</p>
-              <input type="file" accept=".qgz,.png,.pdf,.jpg,.jpeg" style="display:none;" name="mapa">
-              <ul class="file-list" style="list-style:none;margin-top:12px;"></ul>
-            </div>
-          </div>
-
-          <!-- UPLOAD: NOTA -->
-          <div class="form-group">
-            <label>Nota periodistica georreferenciada <span class="required">*</span></label>
-            <div class="file-upload" id="uploadNota">
-              <div class="upload-icon">&#128196;</div>
-              <p><strong>Arrastra tu archivo aqui</strong> o haz clic para seleccionar</p>
-              <p class="file-types">Formatos aceptados: .docx, .pdf, .odt (max 20 MB)</p>
-              <input type="file" accept=".docx,.pdf,.odt,.doc" style="display:none;" name="nota">
-              <ul class="file-list" style="list-style:none;margin-top:12px;"></ul>
-            </div>
-          </div>
-
-          <!-- UPLOAD: HILO -->
-          <div class="form-group">
-            <label>Hilo informativo simulado (5 tuits) <span class="required">*</span></label>
-            <div class="file-upload" id="uploadHilo">
-              <div class="upload-icon">&#128240;</div>
-              <p><strong>Arrastra tu archivo aqui</strong> o haz clic para seleccionar</p>
-              <p class="file-types">Formatos aceptados: .docx, .pdf, .png, .jpg (max 20 MB)</p>
-              <input type="file" accept=".docx,.pdf,.png,.jpg,.jpeg" style="display:none;" name="hilo">
-              <ul class="file-list" style="list-style:none;margin-top:12px;"></ul>
-            </div>
-          </div>
-
-          <!-- UPLOAD: AUTOEVALUACION -->
-          <div class="form-group">
-            <label>Autoevaluacion reflexiva <span class="required">*</span></label>
-            <div class="file-upload" id="uploadAutoeval">
-              <div class="upload-icon">&#128221;</div>
-              <p><strong>Arrastra tu archivo aqui</strong> o haz clic para seleccionar</p>
-              <p class="file-types">Formatos aceptados: .docx, .pdf, .odt, .txt (max 10 MB)</p>
-              <input type="file" accept=".docx,.pdf,.odt,.txt" style="display:none;" name="autoevaluacion">
-              <ul class="file-list" style="list-style:none;margin-top:12px;"></ul>
-            </div>
-          </div>
-
-          <!-- UPLOAD: ARCHIVOS ADICIONALES -->
-          <div class="form-group">
-            <label>Archivos adicionales (opcional)</label>
-            <div class="file-upload" id="uploadExtra">
-              <div class="upload-icon">&#128230;</div>
-              <p><strong>Shapefiles, GeoJSON, CSV u otros archivos del proyecto</strong></p>
-              <p class="file-types">Cualquier formato|max 100 MB total</p>
-              <input type="file" multiple style="display:none;" name="archivos_extra">
-              <ul class="file-list" style="list-style:none;margin-top:12px;"></ul>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="notas">Notas o comentarios adicionales</label>
-            <textarea id="notas" name="notas" class="form-control" placeholder="Agrega cualquier comentario sobre tu entrega: decisiones geoespaciales que tomaste, dificultades encontradas, reflexiones adicionales..."></textarea>
-          </div>
-
-          <div style="text-align:center;margin-top:32px;">
-            <button type="submit" class="btn btn-primary" style="padding:16px 48px;font-size:1rem;">
-              &#128228; Enviar Practica Final
-            </button>
-            <p style="color:var(--text-light);font-size:0.82rem;margin-top:12px;">
-              Al enviar, confirmas que tu trabajo es original y que participaras en la sesion plenaria del 15 de julio.
-            </p>
-          </div>
-        </form>
+      <!-- PASOS RAPIDOS -->
+      <div class="info-cards fade-in" style="max-width:800px;margin:40px auto 0;">
+        <div class="info-card">
+          <div class="card-number">1</div>
+          <h3>Crea el Google Form</h3>
+          <p>Sigue la guia en <code>SETUP_GOOGLE_FORM.md</code> para crear el formulario con todos los campos de archivos y datos personales.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-number">2</div>
+          <h3>Copia la URL</h3>
+          <p>En Google Forms, haz clic en "Enviar" &gt; icono "Insertar" (&lt; &gt;) &gt; copia la URL que aparece.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-number">3</div>
+          <h3>Pega la URL aqui</h3>
+          <p>Abre <code>entrega.html</code>, busca <code>TU_ID_FORMULARIO_GOOGLE</code> y reemplazalo con el ID de tu formulario.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -229,7 +194,7 @@
         <div class="info-card fade-in">
           <div class="card-number">1</div>
           <h3>Confirmacion</h3>
-          <p>Recibiras un correo electronico de confirmacion con los archivos que subiste y la fecha de entrega registrada.</p>
+          <p>Recibiras un correo electronico de confirmacion de Google Forms con los archivos que subiste y la fecha de entrega registrada.</p>
         </div>
         <div class="info-card fade-in">
           <div class="card-number">2</div>
@@ -296,5 +261,37 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // ====================================================================
+    // CONFIGURACION: Reemplaza esta URL con la de tu Google Form.
+    // ====================================================================
+    const GOOGLE_FORM_URL = ''; // Ejemplo: 'https://docs.google.com/forms/d/e/1FAIpQLS.../viewform?embedded=true'
+    const GOOGLE_FORM_DIRECT = ''; // URL directa para abrir en nueva pestana (sin ?embedded=true)
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const iframe = document.getElementById('googleFormIframe');
+      const placeholder = document.getElementById('formPlaceholder');
+      const link = document.getElementById('googleFormLink');
+
+      if (GOOGLE_FORM_URL) {
+        // Mostrar el iframe y ocultar el placeholder
+        if (iframe) {
+          iframe.src = GOOGLE_FORM_URL;
+          iframe.style.display = 'block';
+        }
+        if (placeholder) placeholder.style.display = 'none';
+
+        // Configurar el enlace de nueva pestana
+        if (link) {
+          link.href = GOOGLE_FORM_DIRECT || GOOGLE_FORM_URL.replace('?embedded=true', '');
+        }
+      } else {
+        // Sin URL configurada: mostrar placeholder
+        if (iframe) iframe.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'block';
+        if (link) link.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
