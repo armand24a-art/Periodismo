@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica Final Integradora - Periodismo Ambiental y SIG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-icon">🌍</span>
+        Periodismo Ambiental
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="programa.html">Programa</a></li>
+        <li><a href="materiales.html">Materiales</a></li>
+        <li><a href="practica-final.html" class="active">Practica Final</a></li>
+        <li><a href="entrega.html">Entrega</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="project-hero">
+    <div class="container" style="text-align:center;position:relative;z-index:2;">
+      <div class="hero-tag" style="display:inline-flex;margin-bottom:20px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);padding:6px 16px;border-radius:30px;font-size:0.85rem;">
+        <span>&#9733;</span> Practica Final Integradora &mdash; 40% de la calificacion (mapa + nota)
+      </div>
+      <h1 style="font-family:var(--font-display);font-size:2.6rem;margin-bottom:16px;">Cobertura Geoespacial en Tiempo Real</h1>
+      <p style="opacity:0.9;font-size:1.15rem;max-width:700px;margin:0 auto;line-height:1.8;">
+        Derrame Simulado en la Sonda de Campeche<br>
+        <span style="opacity:0.8;font-size:0.95rem;">15 de julio | 4 horas de trabajo | Evaluacion con rubrica</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTEXTO SIMULADO -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Contexto Simulado</h2>
+      <p class="section-subtitle fade-in">Escenario entregado al inicio del ejercicio</p>
+
+      <div class="form-section fade-in" style="max-width:800px;">
+        <div style="background:linear-gradient(135deg, #e8f5e9, #f1f8e9);border-radius:var(--radius-sm);padding:32px;border-left:6px solid var(--primary);">
+          <p style="font-size:1.05rem;line-height:1.9;color:var(--text);font-style:italic;">
+            "La madrugada del <strong>[fecha simulada]</strong>, una plataforma de Pemex en la Sonda de Campeche reporta una fuga submarina no controlada. A las 6 horas, manchas de hidrocarburo comienzan a aproximarse a 3 localidades costeras de Tabasco y Campeche. La CNH publica coordenadas preliminares del punto de fuga, y en redes sociales circulan videos no verificados de aves cubiertas de chapopote."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTREGABLES -->
+  <section class="section" style="background: linear-gradient(180deg, #f0f7f2 0%, var(--bg) 100%);">
+    <div class="container">
+      <h2 class="section-title fade-in">Entregables del Periodista</h2>
+      <p class="section-subtitle fade-in">Tres componentes que demuestran tus competencias adquiridas</p>
+
+      <!-- ENTREGABLE 1: MAPA -->
+      <div class="info-card fade-in" style="margin-bottom:32px;max-width:850px;margin-left:auto;margin-right:auto;">
+        <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
+          <div class="card-number" style="background:#1565c0;flex-shrink:0;">1</div>
+          <div style="flex:1;min-width:250px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <h3 style="margin:0;">Mapa de Afectacion Preliminar</h3>
+              <span class="badge" style="background:#e3f2fd;color:#1565c0;">40% calificacion</span>
+            </div>
+            <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;margin-bottom:16px;">
+              Usando QGIS, deberas crear un mapa que incluya:
+            </p>
+            <ul style="list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Cargar coordenadas del derrame (CSV)
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Crear buffer de 3 km y 10 km
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Superponer: localidades costeras (INEGI)
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Superponer: areas naturales protegidas (CONABIO)
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Superponer: concesiones petroleras (CNH)
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--primary);">&#10003;</span> Exportar con fuentes, fecha y nota explicativa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENTREGABLE 2: NOTA -->
+      <div class="info-card fade-in" style="margin-bottom:32px;max-width:850px;margin-left:auto;margin-right:auto;">
+        <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
+          <div class="card-number" style="background:#e65100;flex-shrink:0;">2</div>
+          <div style="flex:1;min-width:250px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <h3 style="margin:0;">Nota Periodistica Georreferenciada</h3>
+              <span class="badge" style="background:#fff3e0;color:#e65100;">40% calificacion</span>
+            </div>
+            <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;margin-bottom:16px;">
+              Articulo de 600 palabras que incluya:
+            </p>
+            <ul style="list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--accent);">&#10003;</span> Localizacion exacta y poblaciones en riesgo
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--accent);">&#10003;</span> Dato economico del Banco de Mexico
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--accent);">&#10003;</span> Dato social (obesidad/salud)
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;">
+                <span style="color:var(--accent);">&#10003;</span> Declaracion simulada de un actor
+              </li>
+              <li style="display:flex;align-items:center;gap:8px;font-size:0.88rem;grid-column:1/-1;">
+                <span style="color:var(--accent);">&#10003;</span> Tabla o viñeta con coordenadas clave y distancias calculadas
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENTREGABLE 3: HILO -->
+      <div class="info-card fade-in" style="margin-bottom:32px;max-width:850px;margin-left:auto;margin-right:auto;">
+        <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
+          <div class="card-number" style="background:#6a1b9a;flex-shrink:0;">3</div>
+          <div style="flex:1;min-width:250px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <h3 style="margin:0;">Hilo Informativo para Divulgacion</h3>
+              <span class="badge" style="background:#f3e5f5;color:#6a1b9a;">20% calificacion</span>
+            </div>
+            <p style="color:var(--text-light);font-size:0.92rem;line-height:1.7;margin-bottom:16px;">
+              5 tuits que cuenten la historia de forma visual:
+            </p>
+            <div style="display:grid;gap:10px;">
+              <div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 16px;font-size:0.88rem;">
+                <strong>Tuit 1:</strong> Mapa simplificado del derrame y las comunidades
+              </div>
+              <div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 16px;font-size:0.88rem;">
+                <strong>Tuit 2:</strong> Comparacion de imagen satelital (simulada o real de evento pasado)
+              </div>
+              <div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 16px;font-size:0.88rem;">
+                <strong>Tuit 3:</strong> Dato economico de Banxico
+              </div>
+              <div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 16px;font-size:0.88rem;">
+                <strong>Tuit 4:</strong> Contexto de salud (obesidad/Pemex) y vulnerabilidad
+              </div>
+              <div style="background:var(--bg);border-radius:var(--radius-sm);padding:12px 16px;font-size:0.88rem;">
+                <strong>Tuit 5:</strong> Siguientes pasos (fuentes a monitorear, preguntas sin respuesta)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUBRICA -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Rubrica de Evaluacion</h2>
+      <p class="section-subtitle fade-in">Criterios especificos para la evaluacion de la practica final</p>
+
+      <div style="overflow-x:auto;" class="fade-in">
+        <table class="rubric-table">
+          <thead>
+            <tr>
+              <th style="width:20%;">Criterio</th>
+              <th style="width:27%;">Excelente (3 pts)</th>
+              <th style="width:27%;">Aceptable (2 pts)</th>
+              <th style="width:26%;">Insuficiente (1 pt)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Precision geoespacial</strong></td>
+              <td>Coordenadas correctas, buffer pertinente al tipo de derrame</td>
+              <td>Buffer demasiado pequeno/grande, un error de coordenadas</td>
+              <td>No uso buffers o coordenadas erroneas</td>
+            </tr>
+            <tr>
+              <td><strong>Uso de capas</strong></td>
+              <td>Combino 3 o mas capas tematicas relevantes</td>
+              <td>Uso 2 capas</td>
+              <td>Uso 1 capa o ninguna</td>
+            </tr>
+            <tr>
+              <td><strong>Fuentes geoespaciales</strong></td>
+              <td>Cito instituciones (INEGI, CNH, CONABIO) en mapa y texto</td>
+              <td>Cito algunas fuentes</td>
+              <td>Sin fuentes geoespaciales</td>
+            </tr>
+            <tr>
+              <td><strong>Interpretacion etica</strong></td>
+              <td>No exagero areas afectadas; senalo incertidumbre</td>
+              <td>Exageracion menor</td>
+              <td>Mapa alarmista sin base</td>
+            </tr>
+            <tr>
+              <td><strong>Integracion datos economicos/sociales</strong></td>
+              <td>Vinculo claramente ubicacion con pobreza, salud o economia</td>
+              <td>Vinculacion debil</td>
+              <td>Sin integracion</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS PROPORCIONADOS -->
+  <section class="section" style="background: linear-gradient(180deg, #f0f7f2 0%, var(--bg) 100%);">
+    <div class="container">
+      <h2 class="section-title fade-in">Recursos Proporcionados</h2>
+      <p class="section-subtitle fade-in">Materiales incluidos en el paquete de la practica final</p>
+
+      <div class="info-cards" style="max-width:800px;margin:0 auto;">
+        <div class="info-card fade-in">
+          <div class="card-number">&#128203;</div>
+          <h3>CSV con Coordenadas</h3>
+          <p>Coordenadas ficticias pero realistas del punto de derrame en la Sonda de Campeche, listas para importar en QGIS.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128506;</div>
+          <h3>Capas SIG Pre-descargadas</h3>
+          <p>Carpeta compartida con shapefiles y GeoJSON de localidades costeras, areas naturales protegidas y concesiones petroleras.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128279;</div>
+          <h3>Enlaces a Fuentes Oficiales</h3>
+          <p>Enlaces directos a CNH, Banxico, CONEVAL y CONABIO para consulta durante la practica.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128752;</div>
+          <h3>Imagen Satelital Sentinel-2</h3>
+          <p>Imagen de un derrame anterior para ejercicio de comparacion multitemporal.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128196;</div>
+          <h3>Plantilla de Nota</h3>
+          <p>Formato de article periodistico con indicaciones de estructura, extension y elementos obligatorios.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#9989;</div>
+          <h3>Checklist de Verificacion Etica</h3>
+          <p>Lista de verificacion para asegurar que el mapa y la nota cumplan estandares eticos de precision y no alarmismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTREGA Y REFLEXION -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Entrega y Reflexion Final</h2>
+      <p class="section-subtitle fade-in">Pasos para completar la practica integradora</p>
+
+      <div class="info-cards" style="max-width:700px;margin:0 auto;">
+        <div class="info-card fade-in">
+          <div class="card-number">1</div>
+          <h3>Sube tu Carpeta</h3>
+          <p>Sube tu carpeta completa (mapa + nota + hilo) a la plataforma de entrega compartida.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">2</div>
+          <h3>Sesion Plenaria</h3>
+          <p>Cada participante muestra su mapa y explica una decision geoespacial clave: por que eligio cierto buffer, que capa le dio la historia, etc.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">3</div>
+          <h3>Autoevaluacion Reflexiva</h3>
+          <p>Responde: <em>"Que sesgo geografico tenia antes del curso y como el SIG me ayudo a corregirlo?"</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--gradient-hero);color:white;text-align:center;">
+    <div class="container fade-in">
+      <h2 style="font-family:var(--font-display);font-size:2rem;margin-bottom:16px;">Descarga el Paquete de la Practica Final</h2>
+      <p style="opacity:0.9;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;">
+        Incluye CSV, capas SIG, plantillas, checklist etico y rubeica de evaluacion.
+      </p>
+      <a href="materiales/sesion-11/paquete-practica-final.zip" class="btn btn-primary" download>&#11015; Descargar Paquete Completo</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>&#127758; Periodismo Ambiental y SIG</h3>
+          <p>Curso de Educacion Continua del Colegio de la Frontera Sur.</p>
+        </div>
+        <div>
+          <h4>Navegacion</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="practica-final.html">Practica Final</a></li>
+            <li><a href="entrega.html">Entrega de Trabajos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="https://www.gob.mx/cnh" target="_blank">CNH - SENER</a></li>
+            <li><a href="https://www.banxico.org.mx" target="_blank">Banco de Mexico</a></li>
+            <li><a href="https://www.inegi.org.mx" target="_blank">INEGI</a></li>
+            <li><a href="https://www.conabio.gob.mx" target="_blank">CONABIO</a></li>
+            <li><a href="https://qgis.org" target="_blank">QGIS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Colegio de la Frontera Sur</li>
+            <li>Educacion Continua</li>
+            <li>1 jul - 15 jul, 2026</li>
+            <li>Lun y Mie 9:30 - 10:30 h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2026 Colegio de la Frontera Sur. Todos los derechos reservados.</span>
+        <span>Periodismo Ambiental y Manejo de Informacion Georreferenciada</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

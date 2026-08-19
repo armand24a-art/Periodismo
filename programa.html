@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa - Periodismo Ambiental y SIG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-icon">🌍</span>
+        Periodismo Ambiental
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="programa.html" class="active">Programa</a></li>
+        <li><a href="materiales.html">Materiales</a></li>
+        <li><a href="practica-final.html">Practica Final</a></li>
+        <li><a href="entrega.html">Entrega</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section style="padding: 140px 0 60px; background: var(--gradient-hero); color: white;">
+    <div class="container" style="text-align:center;">
+      <div class="hero-tag" style="display:inline-flex;margin-bottom:20px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);padding:6px 16px;border-radius:30px;font-size:0.85rem;">
+        <span>&#128197;</span> 1 de julio - 15 de julio, 2026
+      </div>
+      <h1 style="font-family:var(--font-display);font-size:2.8rem;margin-bottom:16px;">Programa del Curso</h1>
+      <p style="opacity:0.9;font-size:1.1rem;max-width:650px;margin:0 auto;">
+        11 sesiones | Lunes y miercoles | 9:30 - 10:30 h<br>
+        Modalidad: Presencial y en linea
+      </p>
+    </div>
+  </section>
+
+  <!-- INFO BOX -->
+  <section style="padding: 40px 0 0;">
+    <div class="container">
+      <div class="info-box info-box-info fade-in">
+        <span class="box-icon">&#128161;</span>
+        <div>
+          <p><strong>Metodologia:</strong> El curso combina sesiones teoricas, talleres practicos de analisis de datos, laboratorios SIG con QGIS, estudio de casos y una simulacion de cobertura en tiempo real. No se requieren conocimientos previos de SIG.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM TABLE -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <h2 class="section-title fade-in">Calendario de Sesiones</h2>
+      <p class="section-subtitle fade-in">Haz clic en cada sesion para ver detalles y materiales disponibles</p>
+
+      <div class="program-table-wrap fade-in">
+        <table class="program-table">
+          <thead>
+            <tr>
+              <th>Sesion</th>
+              <th>Fecha</th>
+              <th>Modulo</th>
+              <th>Responsable</th>
+              <th>Modalidad</th>
+              <th>Tipo</th>
+              <th>Entregable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="session-num">1</div></td>
+              <td><strong>1 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Miercoles</span></td>
+              <td><strong>Geologia aplicada al periodismo ambiental</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Conceptos basicos de geologia marina/terrestre; procesos de derrames; impacto geologico y ecologico; traduccion de lenguaje tecnico</span></td>
+              <td>Dr. Julian Gustavo Romero</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Teorico-practico</td>
+              <td style="font-size:0.85rem;">Ejercicio de traduccion: convertir texto tecnico de geologia en nota breve</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">2</div></td>
+              <td><strong>2 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Jueves</span></td>
+              <td><strong>Datos de la CNH - SENER</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Informacion CNH, produccion, exploracion, derrames, fuentes oficiales vs. secundarias</span></td>
+              <td>Dr. Julian Gustavo Romero</td>
+              <td><span class="badge badge-online">En linea</span></td>
+              <td>Taller documental</td>
+              <td style="font-size:0.85rem;">Ficha de lectura critica de un reporte real de derrames CNH</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">3</div></td>
+              <td><strong>3 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Viernes</span></td>
+              <td><strong>Datos del Banco de Mexico</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Relacion desastres-economia; indicadores economicos; vinculacion datos financieros y ambientales</span></td>
+              <td>Dr. Julian Gustavo Romero</td>
+              <td><span class="badge badge-online">En linea</span></td>
+              <td>Teorico con caso</td>
+              <td style="font-size:0.85rem;">Parrafo periodistico integrando dato economico (Banxico) con desastre ambiental</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">4</div></td>
+              <td><strong>6 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Lunes</span></td>
+              <td><strong>Obesidad y Pemex: datos sociales</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Salud y trabajadores Pemex; datos de salud publica; etica en datos sensibles</span></td>
+              <td>Dr. Julian Gustavo Romero</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Taller social</td>
+              <td style="font-size:0.85rem;">Propuesta de angulo periodistico que vincule salud con cobertura de derrame</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">5</div></td>
+              <td><strong>7 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Martes</span></td>
+              <td><strong>Fundamentos de SIG para periodistas</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Que es un SIG; capas de informacion; QGIS, Google Earth; formatos geoespaciales; fuentes INEGI/CONABIO</span></td>
+              <td>Dr. Armando Avalos</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Taller tecnico</td>
+              <td style="font-size:0.85rem;">Exportar un mapa base con punto de derrame y coordenadas correctas</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">6</div></td>
+              <td><strong>8 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Miercoles</span></td>
+              <td><strong>Analisis espacial aplicado (Parte 1)</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Buffers de 500m, 1km, 5km; comunidades y ecosistemas en zonas de influencia; caso Veracruz</span></td>
+              <td>Dr. Armando Avalos</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Tecnico QGIS</td>
+              <td style="font-size:0.85rem;">Mapa con buffers + tabla de comunidades afectadas</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">7</div></td>
+              <td><strong>9 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Jueves</span></td>
+              <td><strong>Analisis espacial aplicado (Parte 2)</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Cambios multitemporales; imagenes satelitales; NDVI/NDWI; superposicion CNH+CONEVAL+CONABIO</span></td>
+              <td>Dr. Armando Avalos</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Tecnico avanzado</td>
+              <td style="font-size:0.85rem;">Mapa de vulnerabilidad con 3+ capas e interpretacion periodistica</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">8</div></td>
+              <td><strong>10 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Viernes</span></td>
+              <td><strong>Visualizacion geoespacial</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Mapa periodistico; diseno etico; Felt, Mapbox, Flourish, Datawrapper; integracion digital</span></td>
+              <td>Dr. Armando Avalos</td>
+              <td><span class="badge badge-presencial">Presencial</span></td>
+              <td>Diseno y publicacion</td>
+              <td style="font-size:0.85rem;">Mapa periodistico final (estatico o interactivo) listo para publicar</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">9</div></td>
+              <td><strong>13 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Lunes</span></td>
+              <td><strong>Etica + Herramientas digitales</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Evitar alarmismo; verificacion en crisis; bases de datos abiertas; fact-checking en tiempo real</span></td>
+              <td>Dra. Dora Elia Ramos Munoz</td>
+              <td><span class="badge badge-online">En linea</span></td>
+              <td>Teorico-practico</td>
+              <td style="font-size:0.85rem;">Checklist de verificacion etica aplicada a caso simulado de derrame</td>
+            </tr>
+            <tr>
+              <td><div class="session-num">10</div></td>
+              <td><strong>14 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Martes</span></td>
+              <td><strong>Comunicacion con comunidades</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Periodismo humano; dar voz a afectados; narrativas inclusivas y sensibles al contexto local</span></td>
+              <td>Dra. Dora Elia Ramos Munoz</td>
+              <td><span class="badge badge-online">En linea</span></td>
+              <td>Teorico-vivencial</td>
+              <td style="font-size:0.85rem;">Guion de entrevista (5 preguntas) con enfoque etico y territorial</td>
+            </tr>
+            <tr style="background: #f0f7f2;">
+              <td><div class="session-num" style="background:var(--accent);">&#9733;</div></td>
+              <td><strong>15 jul</strong><br><span style="color:var(--text-light);font-size:0.8rem;">Miercoles</span></td>
+              <td><strong>Practica final integradora</strong><br><span style="color:var(--text-light);font-size:0.82rem;">Simulacion: "Cobertura geoespacial en tiempo real - Derrame simulado en la Sonda de Campeche". Mapa, nota periodistica, hilo Twitter.</span></td>
+              <td>Todos los instructores</td>
+              <td><span class="badge badge-online">En linea</span></td>
+              <td>Evaluacion practica</td>
+              <td style="font-size:0.85rem;"><strong>Entregable final:</strong> Mapa + nota periodistica + hilo simulado + autoevaluacion</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- EJES DETALLE -->
+  <section class="section" style="background: linear-gradient(180deg, #f0f7f2 0%, var(--bg) 100%);">
+    <div class="container">
+      <h2 class="section-title fade-in">Detalle por Modulo</h2>
+      <p class="section-subtitle fade-in">Contenido tematico de cada eje central del curso</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-geo">Geologia</button>
+        <button class="tab-btn" data-tab="tab-cnh">CNH-SENER</button>
+        <button class="tab-btn" data-tab="tab-banxico">Banxico</button>
+        <button class="tab-btn" data-tab="tab-salud">Salud/Pemex</button>
+        <button class="tab-btn" data-tab="tab-sig">SIG</button>
+        <button class="tab-btn" data-tab="tab-espacial">Analisis Espacial</button>
+        <button class="tab-btn" data-tab="tab-viz">Visualizacion</button>
+        <button class="tab-btn" data-tab="tab-etica">Etica</button>
+        <button class="tab-btn" data-tab="tab-herr">Herramientas</button>
+        <button class="tab-btn" data-tab="tab-comun">Comunidades</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-content active" id="tab-geo">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Conceptos Basicos</h3>
+              <p>Geologia marina y terrestre aplicada al periodismo ambiental. Procesos de derrames y formacion de chapopote. Impacto geologico y ecologico en costas y mares.</p>
+            </div>
+            <div class="info-card">
+              <h3>Traduccion Tecnica</h3>
+              <p>Como traducir lenguaje tecnico en narrativas periodisticas comprensibles para el publico general sin perder rigor cientifico.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-cnh">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Fuentes Oficiales</h3>
+              <p>Que informacion ofrece la CNH y como interpretarla. Produccion, exploracion y derrames: lectura critica de reportes oficiales.</p>
+            </div>
+            <div class="info-card">
+              <h3>Cobertura Responsable</h3>
+              <p>Uso de fuentes oficiales vs. fuentes secundarias. Ejemplos de cobertura responsable con datos de hidrocarburos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-banxico">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Indicadores Economicos</h3>
+              <p>Relacion entre desastres ambientales y economia nacional. Inflacion, tipo de cambio, impacto en exportaciones.</p>
+            </div>
+            <div class="info-card">
+              <h3>Narrativas Economicas</h3>
+              <p>Como vincular datos financieros con consecuencias ambientales. Narrativas economicas en el periodismo ambiental.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-salud">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Salud y Trabajo</h3>
+              <p>Estudios sobre salud y trabajadores de Pemex. Integracion de datos de salud publica en coberturas ambientales.</p>
+            </div>
+            <div class="info-card">
+              <h3>Etica en Datos</h3>
+              <p>Relacion entre condiciones laborales, salud y desastres. Etica en el manejo de datos sensibles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-sig">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Fundamentos SIG</h3>
+              <p>Definicion: capas de informacion (puntos, lineas, poligonos) sobre un mapa base. Software gratuito vs. privativo (QGIS, Google Earth Pro, ArcGIS Online).</p>
+            </div>
+            <div class="info-card">
+              <h3>Datos Geoespaciales</h3>
+              <p>Formatos: Shapefile, GeoJSON, KML, CSV con coordenadas. Fuentes: INEGI, CONABIO, SEDATU. Proyeccion cartografica basica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-espacial">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Buffers y Proximidad</h3>
+              <p>Creacion de buffers de 500m, 1km, 5km. Identificacion de comunidades, cuerpos de agua y ecosistemas protegidos en zonas de influencia.</p>
+            </div>
+            <div class="info-card">
+              <h3>Cambios Multitemporales</h3>
+              <p>Comparacion de imagenes satelitales (Landsat, Sentinel-2). Indices espectrales NDVI y NDWI. Superposicion de capas CNH + CONEVAL + CONABIO.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-viz">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Mapa Periodistico</h3>
+              <p>Elementos indispensables: titulo, fuente, fecha, leyenda accesible, escala. Diseno para redes sociales vs. impreso.</p>
+            </div>
+            <div class="info-card">
+              <h3>Herramientas</h3>
+              <p>Felt y Mapbox Studio: mapas interactivos. Flourish y Datawrapper: mapas de coropletas. Integracion en WordPress y redes sociales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-etica">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Principios Eticos</h3>
+              <p>Evitar alarmismo y desinformacion. Verificacion de fuentes en situaciones de crisis. Balance entre urgencia informativa y rigor cientifico.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-herr">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Datos Abiertos</h3>
+              <p>Uso de bases de datos abiertas: INEGI, SEMARNAT, CONABIO. Visualizacion de datos ambientales y economicos.</p>
+            </div>
+            <div class="info-card">
+              <h3>Fact-Checking</h3>
+              <p>Tecnicas de verificacion en tiempo real. Herramientas digitales para periodistas investigadores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-comun">
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Enfoque Humano</h3>
+              <p>Como dar voz a pescadores, habitantes costeros y trabajadores. Periodismo con enfoque humano y social.</p>
+            </div>
+            <div class="info-card">
+              <h3>Narrativas Inclusivas</h3>
+              <p>Narrativas inclusivas y sensibles al contexto local. Respeto por comunidades vulnerables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Resultados Esperados</h2>
+      <p class="section-subtitle fade-in">Al finalizar el curso, los participantes estaran capacitados para</p>
+
+      <div class="info-cards" style="max-width: 900px; margin: 0 auto;">
+        <div class="info-card fade-in">
+          <div class="card-number">&#128269;</div>
+          <h3>Interpretar Datos</h3>
+          <p>Periodistas capaces de interpretar datos tecnicos, economicos y geoespaciales con rigor y precisión.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128240;</div>
+          <h3>Cobertura Responsable</h3>
+          <p>Coberturas ambientales mas responsables, fundamentadas y localizadas geograficamente.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#127758;</div>
+          <h3>Conciencia Ambiental</h3>
+          <p>Mayor conciencia sobre la relacion entre medio ambiente, economía, sociedad y territorio.</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number">&#128506;</div>
+          <h3>Mapas Periodisticos</h3>
+          <p>Capacidad para producir mapas periodisticos basicos que acompañen las notas informativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>&#127758; Periodismo Ambiental y SIG</h3>
+          <p>Curso de Educacion Continua del Colegio de la Frontera Sur.</p>
+        </div>
+        <div>
+          <h4>Navegacion</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="practica-final.html">Practica Final</a></li>
+            <li><a href="entrega.html">Entrega de Trabajos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="https://www.gob.mx/cnh" target="_blank">CNH - SENER</a></li>
+            <li><a href="https://www.banxico.org.mx" target="_blank">Banco de Mexico</a></li>
+            <li><a href="https://www.inegi.org.mx" target="_blank">INEGI</a></li>
+            <li><a href="https://www.conabio.gob.mx" target="_blank">CONABIO</a></li>
+            <li><a href="https://qgis.org" target="_blank">QGIS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Colegio de la Frontera Sur</li>
+            <li>Educacion Continua</li>
+            <li>1 jul - 15 jul, 2026</li>
+            <li>Lun y Mie 9:30 - 10:30 h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2026 Colegio de la Frontera Sur. Todos los derechos reservados.</span>
+        <span>Periodismo Ambiental y Manejo de Informacion Georreferenciada</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

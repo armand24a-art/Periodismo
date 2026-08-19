@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materiales del Curso - Periodismo Ambiental y SIG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-icon">🌍</span>
+        Periodismo Ambiental
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="programa.html">Programa</a></li>
+        <li><a href="materiales.html" class="active">Materiales</a></li>
+        <li><a href="practica-final.html">Practica Final</a></li>
+        <li><a href="entrega.html">Entrega</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section style="padding: 140px 0 60px; background: var(--gradient-hero); color: white;">
+    <div class="container" style="text-align:center;">
+      <div class="hero-tag" style="display:inline-flex;margin-bottom:20px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);padding:6px 16px;border-radius:30px;font-size:0.85rem;">
+        <span>&#128230;</span> Descarga los materiales de cada sesion
+      </div>
+      <h1 style="font-family:var(--font-display);font-size:2.8rem;margin-bottom:16px;">Materiales del Curso</h1>
+      <p style="opacity:0.9;font-size:1.1rem;max-width:650px;margin:0 auto;">
+        Presentaciones, lecturas, datos geoespaciales y guias de trabajo para cada sesion del curso
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section style="padding: 40px 0 0;">
+    <div class="container">
+      <div class="info-box info-box-warning fade-in">
+        <span class="box-icon">&#128274;</span>
+        <div>
+          <p><strong>Nota:</strong> Algunos materiales estan disponibles una vez iniciada la sesion correspondiente. Los archivos ZIP contienen todos los recursos necesarios para cada practica. Los archivos SIG (shapefiles, geojson) estan incluidos en los paquetes correspondientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS GRID -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Materiales por Sesion</h2>
+      <p class="section-subtitle fade-in">Descarga los paquetes completos o archivos individuales para cada sesion</p>
+
+      <div class="materials-grid">
+
+        <!-- SESION 1 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header">
+            <div class="session-icon">&#128204;</div>
+            <div>
+              <h3>Sesion 1: Geologia Aplicada</h3>
+              <div class="session-meta">1 jul | Dr. Julian Gustavo Romero | Presencial</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Presentacion: Geologia marina y terrestre</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Lectura: Procesos de derrames y chapopote</span>
+              </li>
+              <li>
+                <span class="file-icon file-img">IMG</span>
+                <span>Infografia: Impacto geologico en costas</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 1</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-01/paquete-sesion-01.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-01/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 2 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#1565c0,#42a5f5);">
+            <div class="session-icon">&#128196;</div>
+            <div>
+              <h3>Sesion 2: Datos de la CNH</h3>
+              <div class="session-meta">2 jul | Dr. Julian Gustavo Romero | En linea</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia de lectura critica CNH</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Reporte de derrames (ultimos 2 anos)</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Ficha de analisis documental</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 2</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-02/paquete-sesion-02.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-02/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 3 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#e65100,#ff9800);">
+            <div class="session-icon">&#128200;</div>
+            <div>
+              <h3>Sesion 3: Banco de Mexico</h3>
+              <div class="session-meta">3 jul | Dr. Julian Gustavo Romero | En linea</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Presentacion: Indicadores economicos</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Datos Banxico: Serie historica</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Plantilla: Parrafo periodistico integrado</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 3</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-03/paquete-sesion-03.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-03/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 4 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#6a1b9a,#ab47bc);">
+            <div class="session-icon">&#129657;</div>
+            <div>
+              <h3>Sesion 4: Obesidad y Pemex</h3>
+              <div class="session-meta">6 jul | Dr. Julian Gustavo Romero | Presencial</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Estudios: Salud y trabajadores Pemex</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Datos de salud publica: Obesidad y diabetes</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Etica en datos sensibles</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 4</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-04/paquete-sesion-04.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-04/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 5 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#00695c,#26a69a);">
+            <div class="session-icon">&#128506;</div>
+            <div>
+              <h3>Sesion 5: Fundamentos de SIG</h3>
+              <div class="session-meta">7 jul | Dr. Armando Avalos | Presencial (computadora)</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Manual basico de QGIS para periodistas</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Punto de derrame (CSV con coordenadas)</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Costas de Mexico (GeoJSON)</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 5</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-05/paquete-sesion-05.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-05/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 6 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#1565c0,#1e88e5);">
+            <div class="session-icon">&#128205;</div>
+            <div>
+              <h3>Sesion 6: Analisis Espacial (Parte 1)</h3>
+              <div class="session-meta">8 jul | Dr. Armando Avalos | Presencial (computadora)</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Creacion de buffers en QGIS</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Pozos petroleros Veracruz (Shapefile)</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Localidades costeras INEGI</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Areas naturales protegidas CONABIO</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 6</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-06/paquete-sesion-06.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-06/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 7 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#0d47a1,#42a5f5);">
+            <div class="session-icon">&#128752;</div>
+            <div>
+              <h3>Sesion 7: Analisis Espacial (Parte 2)</h3>
+              <div class="session-meta">9 jul | Dr. Armando Avalos | Presencial (computadora)</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Indices NDVI y NDWI</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Concesiones petroleras CNH</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capa: Pobreza CONEVAL por municipio</span>
+              </li>
+              <li>
+                <span class="file-icon file-img">IMG</span>
+                <span>Imagen: Sentinel-2 derrame anterior</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-07/paquete-sesion-07.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-07/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 8 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#bf360c,#ff7043);">
+            <div class="session-icon">&#127912;</div>
+            <div>
+              <h3>Sesion 8: Visualizacion Geoespacial</h3>
+              <div class="session-meta">10 jul | Dr. Armando Avalos | Presencial (computadora)</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Del mapa tecnico al mapa periodistico</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Plantilla: Elementos eticos del mapa</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Tutorial: Datawrapper y Flourish para mapas</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 8</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-08/paquete-sesion-08.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-08/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 9 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#4a148c,#7b1fa2);">
+            <div class="session-icon">&#9878;</div>
+            <div>
+              <h3>Sesion 9: Etica + Herramientas Digitales</h3>
+              <div class="session-meta">13 jul | Dra. Dora Elia Ramos Munoz | En linea</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Checklist de verificacion etica</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Directorio: Bases de datos abiertas</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Fact-checking en tiempo real</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 9</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-09/paquete-sesion-09.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-09/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 10 -->
+        <div class="material-card fade-in">
+          <div class="material-card-header" style="background:linear-gradient(135deg,#1b5e20,#4caf50);">
+            <div class="session-icon">&#128172;</div>
+            <div>
+              <h3>Sesion 10: Comunicacion Comunitaria</h3>
+              <div class="session-meta">14 jul | Dra. Dora Elia Ramos Munoz | En linea</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Guia: Entrevista con enfoque humano</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Testimonios simulados de comunidades</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Plantilla: Guion de entrevista etica</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span>Paquete completo Sesion 10</span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-10/paquete-sesion-10.zip" class="btn btn-secondary btn-sm" download>&#11015; Descargar ZIP</a>
+            <a href="materiales/sesion-10/" class="btn btn-sm" style="border:2px solid var(--border);background:transparent;">Ver Archivos</a>
+          </div>
+        </div>
+
+        <!-- SESION 11 - PRACTICA FINAL -->
+        <div class="material-card fade-in" style="grid-column: 1 / -1; max-width: 550px; margin: 0 auto;">
+          <div class="material-card-header" style="background:var(--gradient-accent);color:var(--primary-dark);">
+            <div class="session-icon" style="background:rgba(0,0,0,0.15);">&#9733;</div>
+            <div>
+              <h3>Sesion 11: Practica Final Integradora</h3>
+              <div class="session-meta" style="opacity:0.8;">15 jul | Todos los instructores | En linea</div>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <ul class="material-list">
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Escenario: Derrame simulado Sonda de Campeche</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">CSV</span>
+                <span>Coordenadas ficticias del derrame</span>
+              </li>
+              <li>
+                <span class="file-icon file-geo">GEO</span>
+                <span>Capas SIG pre-descargadas completas</span>
+              </li>
+              <li>
+                <span class="file-icon file-img">IMG</span>
+                <span>Imagen Sentinel-2 para comparacion</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Plantilla de nota periodistica</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Checklist de verificacion etica</span>
+              </li>
+              <li>
+                <span class="file-icon file-pdf">PDF</span>
+                <span>Rubrica de evaluacion completa</span>
+              </li>
+              <li>
+                <span class="file-icon file-zip">ZIP</span>
+                <span><strong>Paquete completo Practica Final (todos los recursos)</strong></span>
+              </li>
+            </ul>
+          </div>
+          <div class="material-card-footer">
+            <a href="materiales/sesion-11/paquete-practica-final.zip" class="btn btn-primary" download>&#11015; Descargar Paquete Completo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS ADICIONALES -->
+  <section class="section" style="background: linear-gradient(180deg, #f0f7f2 0%, var(--bg) 100%);">
+    <div class="container">
+      <h2 class="section-title fade-in">Recursos Adicionales</h2>
+      <p class="section-subtitle fade-in">Enlaces y herramientas de uso general durante el curso</p>
+
+      <div class="info-cards">
+        <div class="info-card fade-in">
+          <div class="card-number" style="background:#1565c0;">&#127760;</div>
+          <h3>Fuentes Geoespaciales</h3>
+          <p>
+            <a href="https://www.inegi.org.mx/temas/geografia/" target="_blank">&#8594; INEGI: Marcos Geoestadisticos</a><br>
+            <a href="https://www.conabio.gob.mx/informacion/species/" target="_blank">&#8594; CONABIO: Areas Naturales Protegidas</a><br>
+            <a href="https://www.gob.mx/sedatu" target="_blank">&#8594; SEDATU: Poligonos de tenencia</a><br>
+            <a href="https://www.gob.mx/cnh" target="_blank">&#8594; CNH: Concesiones petroleras</a>
+          </p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number" style="background:#e65100;">&#128200;</div>
+          <h3>Datos Economicos y Sociales</h3>
+          <p>
+            <a href="https://www.banxico.org.mx" target="_blank">&#8594; Banco de Mexico: Indicadores</a><br>
+            <a href="https://www.coneval.org.mx" target="_blank">&#8594; CONEVAL: Pobreza y desigualdad</a><br>
+            <a href="https://www.inegi.org.mx" target="_blank">&#8594; INEGI: Censos y estadisticas</a><br>
+            <a href="https://www.gob.mx/salud" target="_blank">&#8594; SSA: Datos de salud publica</a>
+          </p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="card-number" style="background:#00695c;">&#128295;</div>
+          <h3>Herramientas SIG y Visualizacion</h3>
+          <p>
+            <a href="https://qgis.org" target="_blank">&#8594; QGIS (descarga gratuita)</a><br>
+            <a href="https://earth.google.com" target="_blank">&#8594; Google Earth Pro (gratuito)</a><br>
+            <a href="https://felt.com" target="_blank">&#8594; Felt: Mapas interactivos</a><br>
+            <a href="https://www.datawrapper.de" target="_blank">&#8594; Datawrapper: Visualizacion</a><br>
+            <a href="https://flourish.studio" target="_blank">&#8594; Flourish: Graficos y mapas</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>&#127758; Periodismo Ambiental y SIG</h3>
+          <p>Curso de Educacion Continua del Colegio de la Frontera Sur.</p>
+        </div>
+        <div>
+          <h4>Navegacion</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="practica-final.html">Practica Final</a></li>
+            <li><a href="entrega.html">Entrega de Trabajos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="https://www.gob.mx/cnh" target="_blank">CNH - SENER</a></li>
+            <li><a href="https://www.banxico.org.mx" target="_blank">Banco de Mexico</a></li>
+            <li><a href="https://www.inegi.org.mx" target="_blank">INEGI</a></li>
+            <li><a href="https://www.conabio.gob.mx" target="_blank">CONABIO</a></li>
+            <li><a href="https://qgis.org" target="_blank">QGIS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Colegio de la Frontera Sur</li>
+            <li>Educacion Continua</li>
+            <li>1 jul - 15 jul, 2026</li>
+            <li>Lun y Mie 9:30 - 10:30 h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2026 Colegio de la Frontera Sur. Todos los derechos reservados.</span>
+        <span>Periodismo Ambiental y Manejo de Informacion Georreferenciada</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
